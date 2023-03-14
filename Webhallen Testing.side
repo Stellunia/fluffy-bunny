@@ -1,0 +1,1516 @@
+{
+  "id": "3b3829e8-719b-40fd-b5fa-6c9c2c6df332",
+  "version": "2.0",
+  "name": "Webhallen Testing",
+  "url": "https://www.webhallen.com/",
+  "tests": [{
+    "id": "3dc5f9ed-b1db-45b3-bb3e-4022b055c0bd",
+    "name": "Main",
+    "commands": [{
+      "id": "c66ebd2a-5d7d-42f6-b563-beec0b4026f9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "23568702-0536-4d8b-9e96-2f17c96d21e3",
+    "name": "Member functions",
+    "commands": [{
+      "id": "f2431f47-3a6a-480d-bb6f-86787ac5644c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36d14045-bfaf-4c80-9e95-48abc30e0791",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Stellunia",
+      "targets": [
+        ["linkText=Stellunia", "linkText"],
+        ["css=.username > .router-link-active", "css:finder"],
+        ["xpath=//a[contains(text(),'Stellunia')]", "xpath:link"],
+        ["xpath=//header[@id='main-header']/div/div/div[3]/div/label/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Stellunia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f342270f-67f2-4870-a493-63627216f14e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Achievements",
+      "targets": [
+        ["linkText=Achievements", "linkText"],
+        ["css=.mb-5:nth-child(2) .tile:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Achievements')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/member/4449823/achievements')])[6]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Achievements')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6597ade1-8fbf-4a6f-8be2-3a97f52513cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-6:nth-child(25) .achievement-title",
+      "targets": [
+        ["css=.col-md-6:nth-child(25) .achievement-title", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/section/div[25]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[25]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Join Us, We Have Cookies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ec8b31e-2080-4586-ae23-e2c67627958e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon",
+      "targets": [
+        ["css=.icon", "css:finder"],
+        ["xpath=//img[@alt='Stäng ner']", "xpath:img"],
+        ["xpath=//div[@id='site-container']/div[4]/div/button/img", "xpath:idRelative"],
+        ["xpath=//div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "acc2b5b7-ef23-414a-8250-d83789807097",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Min avatar",
+      "targets": [
+        ["linkText=Min avatar", "linkText"],
+        ["css=.mb-5:nth-child(2) .tile:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Min avatar')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/avatar')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Min avatar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1385f87-4db2-43c0-91af-036bff471dc4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-right > .avatar-item-selector:nth-child(4) .item-type",
+      "targets": [
+        ["css=.p-right > .avatar-item-selector:nth-child(4) .item-type", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[2]/div[2]/div/div[3]/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce415e75-01d0-4645-864c-929abd93b358",
+      "comment": "",
+      "command": "click",
+      "target": "css=.avatar-item-showcase-box:nth-child(5) .ximg-content",
+      "targets": [
+        ["css=.avatar-item-showcase-box:nth-child(5) .ximg-content", "css:finder"],
+        ["xpath=//div[@id='site-container']/div[4]/div/div[2]/div[5]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aca90e66-56cb-42c7-9213-0f4bb6d4dac2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon",
+      "targets": [
+        ["css=.icon", "css:finder"],
+        ["xpath=//img[@alt='Stäng ner']", "xpath:img"],
+        ["xpath=//div[@id='site-container']/div[4]/div/button/img", "xpath:idRelative"],
+        ["xpath=//div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c90b8e1-2937-4da8-bc5b-727ef902b9b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Supply Drops",
+      "targets": [
+        ["linkText=Supply Drops", "linkText"],
+        ["css=.mb-5:nth-child(2) .tile:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Supply Drops')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div[2]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/supply-drop')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Supply Drops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cfbde70-0b59-471a-8b76-dc0c59b9b2c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Vänner",
+      "targets": [
+        ["linkText=Vänner", "linkText"],
+        ["css=.mb-5:nth-child(2) .tile:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Vänner')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/friends')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vänner')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0073144-1343-4ec9-8f39-3f0acb464cd8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Topplistor",
+      "targets": [
+        ["linkText=Topplistor", "linkText"],
+        ["css=.mb-5:nth-child(2) .tile:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Topplistor')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div[2]/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/toplist')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Topplistor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdff84e5-828a-45ca-94ec-1ffa79617017",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gsmhacker",
+      "targets": [
+        ["linkText=Gsmhacker", "linkText"],
+        ["css=.panel:nth-child(2) .username", "css:finder"],
+        ["xpath=//a[contains(text(),'Gsmhacker')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[2]/div[2]/div[2]/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/member/633566/achievements')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gsmhacker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0851677a-6488-4e21-9481-1df9f0487df1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkbox",
+      "targets": [
+        ["css=.checkbox", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/section/div/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39f154c2-f9d6-4684-9638-3f84725da8c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-select:nth-child(1) > .dropdown-label > span",
+      "targets": [
+        ["css=.dropdown-select:nth-child(1) > .dropdown-label > span", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/section/div[2]/div/label/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f9a6c9-2c77-40c2-ab15-3f27c79c168e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(3) > .list-label",
+      "targets": [
+        ["css=.dropdown-item:nth-child(3) > .list-label", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/section/div[2]/div/div/ul/li[3]/span", "xpath:idRelative"],
+        ["xpath=//li[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'XP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69b7ff22-9a78-4929-a6d4-eb9f3bffc597",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Stellunia",
+      "targets": [
+        ["linkText=Stellunia", "linkText"],
+        ["css=.username > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Stellunia')]", "xpath:link"],
+        ["xpath=//header[@id='main-header']/div/div/div[3]/div/label/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Stellunia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87ff95c8-bafb-4bc7-a6ca-fb2f51234149",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input-field",
+      "targets": [],
+      "value": "testtext@€@€£$"
+    }, {
+      "id": "6b96d8fe-20d2-4fcb-9e82-416873897c92",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Medlemsförmåner",
+      "targets": [
+        ["linkText=Medlemsförmåner", "linkText"],
+        ["css=.mb-5:nth-child(1) .tile:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Medlemsförmåner')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/benefits')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Medlemsförmåner')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd2ad91-1f2c-4b1b-bc8f-e860f5b46dbb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Medlemserbjudanden",
+      "targets": [
+        ["linkText=Medlemserbjudanden", "linkText"],
+        ["css=.mb-5:nth-child(1) .tile:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Medlemserbjudanden')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/offers')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Medlemserbjudanden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dfe36ed-53ca-48c1-8e55-5e22d9304ffc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.category-filter:nth-child(1) .checkbox",
+      "targets": [
+        ["css=.category-filter:nth-child(1) .checkbox", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div/div[2]/ul/li/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e696775-c29d-44fb-8edd-e5607c1bedad",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input-field",
+      "targets": [],
+      "value": "Asus"
+    }, {
+      "id": "f6ae2021-e1d9-4889-8abf-961960c4d872",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .checkbox-wrap:nth-child(2) > .checkbox",
+      "targets": [
+        ["css=div:nth-child(2) > .checkbox-wrap:nth-child(2) > .checkbox", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[3]/div[2]/label/span", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53982c92-ce63-46bf-8b00-77bfcb8d2338",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-number:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[4]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1000"
+    }, {
+      "id": "1c3314cf-4bb8-420a-85d6-2502d585d75d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input-number:nth-child(3)",
+      "targets": [
+        ["css=.input-number:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='price'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[4]/div[2]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "ef764b6f-3779-4ea8-b2be-55d13a68dcfd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Avmarkera alla",
+      "targets": [
+        ["linkText=Avmarkera alla", "linkText"],
+        ["css=.mt-3", "css:finder"],
+        ["xpath=//a[contains(text(),'Avmarkera alla')]", "xpath:link"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Avmarkera alla')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9166aaca-af78-4030-86f9-3540fcf8651c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Önskelistor",
+      "targets": [
+        ["linkText=Önskelistor", "linkText"],
+        ["css=.mb-5:nth-child(1) .tile:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Önskelistor')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/wishlists')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Önskelistor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f751e8a-c2e0-4644-93d1-a54d8348bbd4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delbetalningar",
+      "targets": [
+        ["linkText=Delbetalningar", "linkText"],
+        ["css=.mb-5:nth-child(1) .tile:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Delbetalningar')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/payments')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delbetalningar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b81487d-86d6-458e-b482-f55a165b77b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle-btn:nth-child(4) > .toggle-text",
+      "targets": [
+        ["css=.toggle-btn:nth-child(4) > .toggle-text", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[2]/div/button[2]/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mitt konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e44efb0-717e-438b-b801-4691acc2f314",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle-btn:nth-child(5) > .toggle-text",
+      "targets": [
+        ["css=.toggle-btn:nth-child(5) > .toggle-text", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[2]/div/button[3]/span", "xpath:idRelative"],
+        ["xpath=//button[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Frågor & svar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af0426de-9a99-40eb-a7e3-7da21d36deef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profilinställningar",
+      "targets": [
+        ["linkText=Profilinställningar", "linkText"],
+        ["css=.mb-5:nth-child(1) .tile:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Profilinställningar')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/nav/div/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/member/4449823/profile')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profilinställningar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "19f380b4-4919-4a44-ae7d-8266de7d1ac3",
+    "name": "Cart Functions",
+    "commands": [{
+      "id": "7bdfe7a2-c635-4343-9617-8b715a3e41c1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f106b68-24ec-43b6-9c52-b3e739e378bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Datorkomponenter",
+      "targets": [
+        ["linkText=Datorkomponenter", "linkText"],
+        ["css=.root:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Datorkomponenter')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar-top']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Datorkomponenter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6609b35-578d-4c24-9cb9-5797a275a803",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .popular-categories-img > .ximg > .ximg-content",
+      "targets": [
+        ["css=li:nth-child(7) .popular-categories-img > .ximg > .ximg-content", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/ul/li[7]/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//li[7]/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d10449-a941-4a55-9caa-52b4ee6241a4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hyte Y60 Midi Tower",
+      "targets": [
+        ["linkText=Hyte Y60 Midi Tower", "linkText"],
+        ["css=.col-md-4:nth-child(1) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hyte Y60 Midi Tower')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[4]/div[2]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/348234-Hyte-Y60-Midi-Tower-BlackWhite-PCI-e-4-0-Panoramic-Glass-View')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hyte Y60 Midi Tower')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef5cf4e3-bd2d-445f-8eeb-44d890057d74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_secondary > span",
+      "targets": [
+        ["css=.\\_secondary > span", "css:finder"],
+        ["xpath=//div[@id='main-container']/div[2]/div/div/article/div/section/div/button/span", "xpath:idRelative"],
+        ["xpath=//article/div/section/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg paket i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04c76821-ddc0-4a73-9c67-7ac3cc3e678f",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/label/div/div[2]/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10f47be2-1690-4048-86d2-664601f35eca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a32fd5e6-2582-475a-b320-422ea5f4f71d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(2) .btn-remove-item > .icon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1022c999-26f9-40b5-a7c7-4e86b55852d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33be8a81-59fd-476c-a86e-00058febd099",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.cart-list-row:nth-child(2) .btn-remove-item > .icon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f200ea6-3c14-4bcb-aee2-ba1ff9230b68",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fa62250-eec6-44a9-9a36-28c7e3b037e9",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7778c50-47f3-4d8d-a9bb-2a846d114836",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bca1cc0-c611-4aa6-b0d7-a4b9dee5e19e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-close > .icon",
+      "targets": [
+        ["css=.btn-close > .icon", "css:finder"],
+        ["xpath=//img[@alt='Stäng ner']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9b29076-dca0-44ed-92d1-2f884a85bdc7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Köpvillkor",
+      "targets": [
+        ["linkText=Köpvillkor", "linkText"],
+        ["css=.footer-links-child:nth-child(1) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Köpvillkor')]", "xpath:link"],
+        ["xpath=//footer[@id='footer']/div/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/info/8-Kopvillkor')]", "xpath:href"],
+        ["xpath=//footer/div/div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Köpvillkor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e024755-b798-47f3-8a9c-86618ce9ce1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tile:nth-child(1) > a",
+      "targets": [
+        ["css=.tile:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Spel')])[15]", "xpath:link"],
+        ["xpath=//aside[@id='page-content-col-1']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/section/1-Spel')]", "xpath:href"],
+        ["xpath=//aside/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e95b67d1-b47c-4bb4-a007-bc9162121c39",
+    "name": "Create account",
+    "commands": [{
+      "id": "51e64dfa-6525-4edd-a60a-5c3cb0589e8e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc787720-ba60-42cc-a863-e788bd79f921",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.d-block > strong",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b141f355-e9a4-4da9-aa14-6699b14db930",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "css=.active > .input-field",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55725fb4-be39-4c59-8cc1-4a7090ceb566",
+      "comment": "",
+      "command": "//click",
+      "target": "linkText=Bli medlem",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aca0494f-6e8a-460f-93bd-90c2bac0c120",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=email",
+      "targets": [],
+      "value": "estelle_h_testning_1997@outlook.com"
+    }, {
+      "id": "a6461da7-37d2-4469-8ef2-387d24c8af0e",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=username",
+      "targets": [],
+      "value": "EH1997"
+    }, {
+      "id": "58298d8d-5367-4ffc-9acd-dfa77d6daee0",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=password",
+      "targets": [],
+      "value": "testing1forEC"
+    }, {
+      "id": "19d1f99f-d714-455f-9883-96177d93bbf7",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=verifypassword",
+      "targets": [],
+      "value": "testing1forEC"
+    }]
+  }, {
+    "id": "454cbc4f-55af-49c5-b577-4d75b14eb910",
+    "name": "Search and add to cart",
+    "commands": [{
+      "id": "008aaaac-a532-4b4e-b50b-6fa6e30b2197",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17067a5d-3a46-41e8-a914-750650e98ec8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ea8df17-8401-4d6c-8d0e-41eec8ff674f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/input",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nvidia"
+    }, {
+      "id": "396a7704-69be-4d5a-b8f1-7aeaf7ee1cfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button > img",
+      "targets": [
+        ["css=.search-button > img", "css:finder"],
+        ["xpath=//img[@alt='Search']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/span/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9a9fb28-0097-4273-a081-17284d5aefdf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ASUS TUF GeForce RTX 3060 OC 12GB V2",
+      "targets": [
+        ["linkText=ASUS TUF GeForce RTX 3060 OC 12GB V2", "linkText"],
+        ["css=.col-md-4:nth-child(1) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'ASUS TUF GeForce RTX 3060 OC 12GB V2')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/336461-ASUS-TUF-GeForce-RTX-3060-OC-12GB-V2')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ASUS TUF GeForce RTX 3060 OC 12GB V2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d1575ef-3cb9-4cc8-ad14-f369d48a9954",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_stretch > span",
+      "targets": [
+        ["css=.\\_stretch > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55436fd3-90e1-448c-9abc-aa3068e47ea5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-icon",
+      "targets": [
+        ["css=.cart-icon", "css:finder"],
+        ["xpath=//img[@alt='cart']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/label/div/div/img", "xpath:idRelative"],
+        ["xpath=//label/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6800bfab-13c7-4a4d-b56d-fc172d4ff1f2",
+      "comment": "",
+      "command": "//click",
+      "target": "linkText=Till kassan",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "923b148d-4721-4511-abb8-e88c3d38473a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Till kassan",
+      "targets": [
+        ["linkText=Till kassan", "linkText"],
+        ["css=.\\_stretch:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Till kassan')]", "xpath:link"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/checkout')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Till kassan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ea1954a-0974-4d19-8057-457a0f061039",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-link .ximg-content",
+      "targets": [
+        ["css=.logo-link .ximg-content", "css:finder"],
+        ["xpath=//header[@id='main-header']/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "448dcff9-6b43-4710-b74c-d1d8f5f0305b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Webhallen Config Core - 12400F / 3060Ti",
+      "targets": [
+        ["linkText=Webhallen Config Core - 12400F / 3060Ti", "linkText"],
+        ["css=.section:nth-child(1) .product-tip-slider-anchor-wrap:nth-child(3) .fixed-lines:nth-child(2) a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Webhallen Config Core - 12400F / 3060Ti')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/div/div/div[3]/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/356494-Webhallen-Config-Core-12400F-3060Ti')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Webhallen Config Core - 12400F / 3060Ti')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1601c7c9-07ff-4721-b68b-3fd9d8d0fa58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ASUS TUF GAMING M3",
+      "targets": [
+        ["linkText=ASUS TUF GAMING M3", "linkText"],
+        ["css=.d-flex:nth-child(2) .info-txt", "css:finder"],
+        ["xpath=//a[contains(text(),'ASUS TUF GAMING M3')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div[2]/div/div/article/div/section/div[2]/div[2]/label/span[2]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/product/319536-ASUS-TUF-GAMING-M3')]", "xpath:href"],
+        ["xpath=//div[2]/label/span[2]/div/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ASUS TUF GAMING M3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cecf8d8-878a-44f2-95e5-bf0260450020",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_large:nth-child(3) > span",
+      "targets": [
+        ["css=.\\_large:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f102c57-0844-4160-963e-9d7abeb1e256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-btn:nth-child(1) > span",
+      "targets": [
+        ["css=.text-btn:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='site-container']/div[4]/div/div/div[4]/button/span", "xpath:idRelative"],
+        ["xpath=//div[4]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg till försäkring')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbbe167f-aa63-4e29-bcb6-7155d575533c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Intel"
+    }, {
+      "id": "4b5b6889-87d9-4552-addf-1daa8f7fd3bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button",
+      "targets": [
+        ["css=.search-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/span/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a238121c-5e67-40a8-ba2f-b0224d1ad004",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Intel Core i9-12900K",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "47d44cf2-7b17-4563-9384-5b9602a14d5f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Intel Core i9-12900K",
+      "targets": [
+        ["linkText=Intel Core i9-12900K", "linkText"],
+        ["css=.col-md-4:nth-child(1) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Intel Core i9-12900K')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/340990-Intel-Core-i9-12900K')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Intel Core i9-12900K')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f827fc-a995-4e0c-b151-25e7b85343e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_large:nth-child(3) > span",
+      "targets": [
+        ["css=.\\_large:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8459817-959f-491b-ba88-112ec7430010",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": "Corsair"
+    }, {
+      "id": "7c10c088-98f1-49bf-80bf-9e6c334dd943",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button > img",
+      "targets": [
+        ["css=.search-button > img", "css:finder"],
+        ["xpath=//img[@alt='Search']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/span/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d9dc4d2-85d0-47d7-a250-84d54f0133d7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "linkText=Corsair Vengeance RGB PRO 16GB (2x8GB)",
+      "targets": [
+        ["linkText=Corsair Vengeance RGB PRO 16GB (2x8GB)", "linkText"],
+        ["css=.col-md-4:nth-child(3) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Corsair Vengeance RGB PRO 16GB (2x8GB)')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div/div[3]/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/287925-Corsair-Vengeance-RGB-PRO-16GB-2x8GB-3200MHz-DDR4-CL16-CMW16GX4M2C3200C16')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Corsair Vengeance RGB PRO 16GB (2x8GB)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6de2884-3468-4662-b7e8-e35acb88ac99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Corsair Vengeance RGB PRO 16GB (2x8GB)",
+      "targets": [
+        ["linkText=Corsair Vengeance RGB PRO 16GB (2x8GB)", "linkText"],
+        ["css=.col-md-4:nth-child(3) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Corsair Vengeance RGB PRO 16GB (2x8GB)')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div/div[3]/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/287925-Corsair-Vengeance-RGB-PRO-16GB-2x8GB-3200MHz-DDR4-CL16-CMW16GX4M2C3200C16')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Corsair Vengeance RGB PRO 16GB (2x8GB)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "964f32ce-da28-494e-aa5a-a2db5c2daf18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-btn:nth-child(4) > span",
+      "targets": [
+        ["css=.text-btn:nth-child(4) > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50883329-d5ef-46b7-90e1-79e515e49319",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Pokemon"
+    }, {
+      "id": "68bb3b59-1f4c-41bd-b8f6-bffecb427433",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-button > img",
+      "targets": [
+        ["css=.search-button > img", "css:finder"],
+        ["xpath=//img[@alt='Search']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[2]/div/div/div/span/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d162f160-8454-4814-a4a6-c1ea5d024286",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gå till toppen av sidan",
+      "targets": [
+        ["linkText=Gå till toppen av sidan", "linkText"],
+        ["css=div:nth-child(1) > .pull-right:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gå till toppen av sidan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84c9a5ae-abee-4c50-ae2b-ea121e115032",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) .filter-box-value-text",
+      "targets": [
+        ["css=li:nth-child(1) .filter-box-value-text", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div/div[2]/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Samlarkortspel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "908aad7b-d742-46d0-90c5-0c816ddb6d14",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Pokemon Divergent Powers Tin 2022",
+      "targets": [
+        ["linkText=Pokemon Divergent Powers Tin 2022", "linkText"],
+        ["css=.product-list-page:nth-child(2) > .col-md-4:nth-child(6) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pokemon Divergent Powers Tin 2022')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div[2]/div[6]/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/353805-Pokemon-Divergent-Powers-Tin-2022')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[6]/div/div/div/span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pokemon Divergent Powers Tin 2022')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "b3dc08e2-ec77-49aa-bde3-56c8a0e9063d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pokemon Divergent Powers Tin 2022",
+      "targets": [
+        ["linkText=Pokemon Divergent Powers Tin 2022", "linkText"],
+        ["css=.product-list-page:nth-child(2) > .col-md-4:nth-child(6) .fixed-lines a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pokemon Divergent Powers Tin 2022')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[3]/div[2]/div[6]/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/353805-Pokemon-Divergent-Powers-Tin-2022')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[6]/div/div/div/span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pokemon Divergent Powers Tin 2022')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02ce6e73-beff-4550-bb8a-0883a724d8be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_stretch > span",
+      "targets": [
+        ["css=.\\_stretch > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Lägg i varukorg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59759b4a-fc3b-4df6-a8a2-23b351a4aeb0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mobile-cart-icon",
+      "targets": [
+        ["css=.mobile-cart-icon", "css:finder"],
+        ["xpath=//img[@alt='cart']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/label/div/div/img", "xpath:idRelative"],
+        ["xpath=//label/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f96001ae-ba11-4d85-9bde-f39b5d833859",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "448a97af-f022-4bb5-8129-48d1f06477be",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "f32b9abe-27f7-449a-91ca-d7efc6b0e65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da5477a5-9a8c-49fd-a504-22a667b8537a",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "dcf6fb3f-bf16-4c75-b71c-67f3bb4856ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1306de1-c418-4843-b722-304b50d0f6f6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "79929e03-e83f-408e-a571-d11d71109dd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56a207cb-d0bd-4811-a7ed-99909a31f866",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1a555935-af07-440f-9596-cb00895240f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecf7de6a-d1c9-4e35-921c-e7dfd7f72892",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item > .icon",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item > .icon", "css:finder"],
+        ["xpath=//img[@alt='Ta bort']", "xpath:img"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "3802f21a-df87-474a-9be1-ce0f1940fcca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-list-row:nth-child(1) .btn-remove-item",
+      "targets": [
+        ["css=.cart-list-row:nth-child(1) .btn-remove-item", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//header[@id='main-header']/div/div/div[4]/div/div[2]/div/ul/li/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0a5b4fb2-2903-48bf-bb22-8f7e410e2316",
+    "name": "Filter Functions",
+    "commands": [{
+      "id": "f49ee3ab-465a-46d3-b408-a5b824049263",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.webhallen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "627aa685-2a71-4b5d-8364-050c03d223bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Datorer & Tillbehör",
+      "targets": [
+        ["linkText=Datorer & Tillbehör", "linkText"],
+        ["css=.root:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Datorer & Tillbehör')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar-top']/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Datorer & Tillbehör')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfc869ca-4eea-4dce-9af7-bf5bd2d268e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(7) .popular-categories-img > .ximg > .ximg-content",
+      "targets": [
+        ["css=li:nth-child(7) .popular-categories-img > .ximg > .ximg-content", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/ul/li[7]/a/div/div/div", "xpath:idRelative"],
+        ["xpath=//li[7]/a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4d0d9b8-5241-4b94-bc44-2e79128e16ba",
+      "comment": "",
+      "command": "click",
+      "target": "name=price",
+      "targets": [
+        ["name=price", "name"],
+        ["css=.input-number:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='price']", "xpath:attributes"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0695e091-8bb9-42b4-941f-6666bcc5abd3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=price",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "1fc3b07a-31a7-4c9a-b68e-83f1053d41e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > .checkbox-wrap:nth-child(2) > .checkbox",
+      "targets": [
+        ["css=div:nth-child(2) > .checkbox-wrap:nth-child(2) > .checkbox", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[2]/div[2]/label/span", "xpath:idRelative"],
+        ["xpath=//div[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16008e61-fe01-48a9-9399-5dbe6daf7214",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle-btn:nth-child(1) > .toggle-icon:nth-child(1) > img",
+      "targets": [
+        ["css=.toggle-btn:nth-child(1) > .toggle-icon:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='icon']", "xpath:img"],
+        ["xpath=//div[@id='main-container']/article/div[4]/div/div[2]/button/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3581a4d9-8c72-4403-bdd3-daed02295f23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.toggle-group > .toggle-btn:nth-child(3)",
+      "targets": [
+        ["css=.toggle-group > .toggle-btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[4]/div/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b1e32b6-fe85-488d-9fc7-e719461cebc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rattar",
+      "targets": [
+        ["linkText=Rattar", "linkText"],
+        ["css=.tile:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rattar')]", "xpath:link"],
+        ["xpath=//aside[@id='page-content-col-1']/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/se/category/189-Rattar')]", "xpath:href"],
+        ["xpath=//aside/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rattar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d948d74-94c6-41cf-8b84-c08c89cbc2b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .checkbox-wrap:nth-child(2) > .checkbox",
+      "targets": [
+        ["css=div:nth-child(1) > .checkbox-wrap:nth-child(2) > .checkbox", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[4]/div[2]/div/label[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a25dcdce-ed3c-42b5-8c31-514525bf383f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.input-field",
+      "targets": [
+        ["css=.input-field", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "TH8A"
+    }, {
+      "id": "b681265b-dd26-41c1-bed6-fc1cb5f5f3de",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Thrustmaster TH8A Add-On Shifter",
+      "targets": [
+        ["linkText=Thrustmaster TH8A Add-On Shifter", "linkText"],
+        ["css=.fixed-lines > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Thrustmaster TH8A Add-On Shifter')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[5]/div[2]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/278275-Thrustmaster-TH8A-Add-On-Shifter')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Thrustmaster TH8A Add-On Shifter')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6419d166-72e5-47c8-9503-deb26b0955ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Thrustmaster TH8A Add-On Shifter",
+      "targets": [
+        ["linkText=Thrustmaster TH8A Add-On Shifter", "linkText"],
+        ["css=.fixed-lines > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Thrustmaster TH8A Add-On Shifter')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[5]/div[2]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/278275-Thrustmaster-TH8A-Add-On-Shifter')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Thrustmaster TH8A Add-On Shifter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf7f79c-9a03-47d4-904b-e5344f8f6769",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Rattar",
+      "targets": [
+        ["linkText=Rattar", "linkText"],
+        ["css=.breadcrumb > li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rattar')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div/ol/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/category/189-Rattar')])[2]", "xpath:href"],
+        ["xpath=//ol/li[3]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "e33ec03b-a2e2-4a25-8a8b-f7778478ab28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rattar",
+      "targets": [
+        ["linkText=Rattar", "linkText"],
+        ["css=.breadcrumb > li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Rattar')])[2]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/div/ol/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/category/189-Rattar')])[2]", "xpath:href"],
+        ["xpath=//ol/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37cfc3a4-75d1-47ae-bf3d-bf93376ea473",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gå till toppen av sidan",
+      "targets": [
+        ["linkText=Gå till toppen av sidan", "linkText"],
+        ["css=.product-list-progress-container > a", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[5]/div[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gå till toppen av sidan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d568e743-5cbe-4c67-a54b-b14fdb6f209b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TV, Ljud & Bild",
+      "targets": [
+        ["linkText=TV, Ljud & Bild", "linkText"],
+        ["css=.root:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'TV, Ljud & Bild')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar-top']/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'TV, Ljud & Bild')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84c9370c-bdbb-4486-824d-95b835849d65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Studio, Instrument & DJ",
+      "targets": [
+        ["linkText=Studio, Instrument & DJ", "linkText"],
+        ["css=.icon-tiles > li:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Studio, Instrument & DJ')])[3]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div[6]/div/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/category/3007-Studio-Instrument-DJ')])[3]", "xpath:href"],
+        ["xpath=//div[6]/div/ul/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04286eca-d6a4-460c-aa67-caeb56941082",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .checkbox-wrap:nth-child(2) > .checkbox",
+      "targets": [
+        ["css=div:nth-child(1) > .checkbox-wrap:nth-child(2) > .checkbox", "css:finder"],
+        ["xpath=//div[@id='product-list-filter-container']/div[2]/div/div[4]/div[2]/div/label[2]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13e3791b-75f4-428d-ac2d-c0d09d10e4e7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Mackie MC-250",
+      "targets": [
+        ["linkText=Mackie MC-250", "linkText"],
+        ["css=.fixed-lines > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mackie MC-250')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[5]/div[2]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/325556-Mackie-MC-250-Professional-Closed-Back-Headphones')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mackie MC-250')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "96d0443d-2ae9-4760-86af-8c044f66e146",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mackie MC-250",
+      "targets": [
+        ["linkText=Mackie MC-250", "linkText"],
+        ["css=.fixed-lines > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mackie MC-250')]", "xpath:link"],
+        ["xpath=//div[@id='main-container']/article/div[5]/div[2]/div/div/div/div/div/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/se/product/325556-Mackie-MC-250-Professional-Closed-Back-Headphones')])[2]", "xpath:href"],
+        ["xpath=//span/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mackie MC-250')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7078b29-36b8-45cc-99fc-4d58d0a7a0c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Spel",
+      "targets": [
+        ["linkText=Spel", "linkText"],
+        ["css=.root:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Spel')]", "xpath:link"],
+        ["xpath=//nav[@id='navbar-top']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Spel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da223f26-b030-483d-9e0f-672300303433",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4) .popular-categories-title",
+      "targets": [
+        ["css=li:nth-child(4) .popular-categories-title", "css:finder"],
+        ["xpath=//div[@id='main-container']/article/div[2]/div/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Nintendo Switch konsol')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4384927-883d-4153-a177-d7da4966b4d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nintendo Switch OLED Model Neon Red/Neon Blue",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b978eaee-fc6a-43ec-bc39-280620c0d39c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.variant-selector > .dropdown-label > span",
+      "targets": [
+        ["css=.variant-selector > .dropdown-label > span", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/div[2]/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Varianter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "023805c0-e186-490c-8817-8dc5d8a45053",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-list-variant-item:nth-child(1) .small",
+      "targets": [
+        ["css=.product-list-variant-item:nth-child(1) .small", "css:finder"],
+        ["xpath=//div[@id='add-product-to-cart']/div[2]/div/ul/li/div/span", "xpath:idRelative"],
+        ["xpath=//li/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'White')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c561e599-760f-41c0-b801-4095150ddb11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logo-link .ximg-content",
+      "targets": [
+        ["css=.logo-link .ximg-content", "css:finder"],
+        ["xpath=//header[@id='main-header']/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b6310486-432d-4d84-96e5-21292cb0745f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3dc5f9ed-b1db-45b3-bb3e-4022b055c0bd"]
+  }],
+  "urls": ["https://www.webhallen.com/"],
+  "plugins": []
+}

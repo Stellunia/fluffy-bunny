@@ -11,6 +11,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
 
+from helper_tests import simple_assert, boolean_assert
+
 class TestCartFunctions():
   def setup_method(self, method):
     chrome_options = Options()
@@ -25,22 +27,47 @@ class TestCartFunctions():
   def test_cartFunctions(self):
     self.driver.get("https://www.webhallen.com/")
     #self.driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[2]/div/nav/div/ul/li[4]/a").click()
+    
+    try:
+      WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > div.header-dropdown.member-form > button > img")))
+      self.driver.find_element(By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > div.header-dropdown.member-form > button > img").click()
+    except:
+      pass
+    #WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
+    #self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span").click()
+    
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Datorkomponenter")))
     self.driver.find_element(By.LINK_TEXT, "Datorkomponenter").click()
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Chassi")))
     self.driver.find_element(By.LINK_TEXT, "Chassi").click()
+    WebDriverWait(self.driver,3)
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".filter-box:nth-child(1) h3")))
     self.driver.find_element(By.XPATH, "(//input[@type=\'text\'])[2]").send_keys("Hyte Y60")
+    WebDriverWait(self.driver,3)
     #WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Gå till toppen")))
     #self.driver.find_element(By.LINK_TEXT, "Gå till toppen").click()
+    WebDriverWait(self.driver,3)
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Hyte Y60 Midi Tower")))
     self.driver.find_element(By.LINK_TEXT, "Hyte Y60 Midi Tower").click()
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "\_secondary > span")))
-    self.driver.find_element(By.CSS_SELECTOR, "\_secondary > span")
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "strong")))
-    self.driver.find_element(By.CSS_SELECTOR, "strong").click()
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".down-arrow")))
-    self.driver.find_element(By.CSS_SELECTOR, ".down-arrow").click()
+    WebDriverWait(self.driver,3)
+    self.driver.execute_script("window.scrollBy(0,500)","")
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button/span")))
+    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button/span").click()
+    
+    #try:
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[3]/div/div[3]/button")))
+    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[3]/div/div[3]/button").click()
+    #except:
+      #pass
+    
+    WebDriverWait(self.driver,3)
+    self.driver.execute_script("window.scrollBy(0,500)","")
+    
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Varukorg")))
+    self.driver.find_element(By.LINK_TEXT, "Varukorg").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/span")))
+    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/span").click()
+    
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon").click()
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
@@ -51,6 +78,6 @@ class TestCartFunctions():
     self.driver.find_element(By.CSS_SELECTOR, ".btn-close > .icon").click()
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Köpvillkor")))
     self.driver.find_element(By.LINK_TEXT, "Köpvillkor").click()
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".tile:nth-child(1) > a")))
-    self.driver.find_element(By.CSS_SELECTOR, ".tile:nth-child(1) > a").click()
   
+    title_name = self.driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[3]/main/div/div[4]/div[1]/div/article/section[1]/div/h1")
+    simple_assert(title_name.text, "Köpvillkor")

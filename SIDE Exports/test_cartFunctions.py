@@ -9,28 +9,48 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.options import Options
 
 class TestCartFunctions():
   def setup_method(self, method):
-    self.driver = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--window-size=1920,1080")
+    self.driver = webdriver.Chrome(chrome_options=chrome_options)
+    #chrome_options.add_experimental_option("detach", True)
     self.vars = {}
   
-  def teardown_method(self, method):
-    self.driver.quit()
+  #def teardown_method(self, method):
+  #  self.driver.quit()
   
   def test_cartFunctions(self):
     self.driver.get("https://www.webhallen.com/")
+    #self.driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[2]/div/nav/div/ul/li[4]/a").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Datorkomponenter")))
     self.driver.find_element(By.LINK_TEXT, "Datorkomponenter").click()
-    self.driver.find_element(By.CSS_SELECTOR, "li:nth-child(8) .popular-categories-title").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Chassi")))
+    self.driver.find_element(By.LINK_TEXT, "Chassi").click()
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".filter-box:nth-child(1) h3")))
     self.driver.find_element(By.XPATH, "(//input[@type=\'text\'])[2]").send_keys("Hyte Y60")
+    #WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Gå till toppen")))
+    #self.driver.find_element(By.LINK_TEXT, "Gå till toppen").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Hyte Y60 Midi Tower")))
     self.driver.find_element(By.LINK_TEXT, "Hyte Y60 Midi Tower").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "\_secondary > span")))
+    self.driver.find_element(By.CSS_SELECTOR, "\_secondary > span")
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "strong")))
     self.driver.find_element(By.CSS_SELECTOR, "strong").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".down-arrow")))
     self.driver.find_element(By.CSS_SELECTOR, ".down-arrow").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".cart-list-row:nth-child(2) .btn-remove-item > .icon").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".btn-close > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".btn-close > .icon").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Köpvillkor")))
     self.driver.find_element(By.LINK_TEXT, "Köpvillkor").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".tile:nth-child(1) > a")))
     self.driver.find_element(By.CSS_SELECTOR, ".tile:nth-child(1) > a").click()
   

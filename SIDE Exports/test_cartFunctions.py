@@ -10,6 +10,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support import expected_conditions as EC
 
 from helper_tests import simple_assert, boolean_assert
 
@@ -21,16 +23,16 @@ class TestCartFunctions():
     #chrome_options.add_experimental_option("detach", True)
     self.vars = {}
   
-  #def teardown_method(self, method):
-  #  self.driver.quit()
+  def teardown_method(self, method):
+    self.driver.quit()
   
-  def test_cartFunctions(self):
+  def test_login(self):
     self.driver.get("https://www.webhallen.com/")
     #self.driver.find_element(By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[2]/div/nav/div/ul/li[4]/a").click()
     
     try:
-      WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > div.header-dropdown.member-form > button > img")))
-      self.driver.find_element(By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > div.header-dropdown.member-form > button > img").click()
+      WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
+      self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span").click()
     except:
       pass
     #WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
@@ -63,10 +65,14 @@ class TestCartFunctions():
     WebDriverWait(self.driver,3)
     self.driver.execute_script("window.scrollBy(0,500)","")
     
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Varukorg")))
-    self.driver.find_element(By.LINK_TEXT, "Varukorg").click()
-    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/span")))
-    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/span").click()
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div")))
+    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div").click()
+    
+    WebDriverWait(self.driver, 3)
+    self.driver.execute_script("window.scrollBy(0,-500)","")
+    
+    WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button")))
+    self.driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button").click()
     
     WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
     self.driver.find_element(By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon").click()

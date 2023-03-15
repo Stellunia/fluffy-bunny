@@ -9,16 +9,24 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support import expected_conditions as EC
 
-class TestSearchandaddtocart():
+from helper_tests import simple_assert, boolean_assert
+
+class TestCartFunctions():
   def setup_method(self, method):
-    self.driver = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--window-size=1920,1080")
+    self.driver = webdriver.Chrome(chrome_options=chrome_options)
+    #chrome_options.add_experimental_option("detach", True)
     self.vars = {}
   
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_searchandaddtocart(self):
+  def test_login(self):
     self.driver.get("https://www.webhallen.com/")
     self.driver.find_element(By.XPATH, "//header[@id=\'main-header\']/div/div/div[2]/div/div/div/input").click()
     self.driver.find_element(By.XPATH, "//header[@id=\'main-header\']/div/div/div[2]/div/div/div/input").send_keys("Nvidia")

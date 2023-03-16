@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from helper_tests import simple_assert, boolean_assert
 
-class TestCartFunctions():
+class TestSearchAndAddToCart():
   def setup_method(self, method):
     chrome_options = Options()
     chrome_options.add_argument("--window-size=1920,1080")
@@ -26,8 +26,10 @@ class TestCartFunctions():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_login(self):
+  def test_search_and_add_to_cart(self):
     self.driver.get("https://www.webhallen.com/")
+    
+    print("")
     self.driver.find_element(By.XPATH, "//header[@id=\'main-header\']/div/div/div[2]/div/div/div/input").click()
     self.driver.find_element(By.XPATH, "//header[@id=\'main-header\']/div/div/div[2]/div/div/div/input").send_keys("Nvidia")
     self.driver.find_element(By.CSS_SELECTOR, ".search-button > img").click()

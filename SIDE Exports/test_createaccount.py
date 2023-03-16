@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from helper_tests import simple_assert, boolean_assert
 
-class TestCartFunctions():
+class TestCreateAccount():
   def setup_method(self, method):
     chrome_options = Options()
     chrome_options.add_argument("--window-size=1920,1080")
@@ -26,6 +26,6 @@ class TestCartFunctions():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_login(self):
+  def test_creating_accoutn(self):
     self.driver.get("https://www.webhallen.com/")
   

@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from helper_tests import simple_assert, boolean_assert
 
-class TestCartFunctions():
+class TestLoginFunctions():
   def setup_method(self, method):
     chrome_options = Options()
     chrome_options.add_argument("--window-size=1920,1080")

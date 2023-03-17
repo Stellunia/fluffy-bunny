@@ -105,7 +105,7 @@ class TestFilterFunctions():
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Studio, Instrument & DJ")))
     element.click()
     
-    print("")
+    print("Filter with checkbox ''")
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "div:nth-child(1) > .checkbox-wrap:nth-child(2) > .checkbox")))
     element.click()
     
@@ -126,11 +126,11 @@ class TestFilterFunctions():
     element.click()
     
     print("Expand drop-down menu of colour choices")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".variant-selector > .dropdown-label > span")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/div[1]/div/section[2]/div[1]/div[2]/label/span/text()")))
     element.click()
     
     print("Switch colour of specified product")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-list-variant-item:nth-child(1) .small")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/div[1]/div/section[2]/div[1]/div[2]/div/ul/li[1]/div/span")))
     element.click()
     
     self.driver.implicitly_wait(3)

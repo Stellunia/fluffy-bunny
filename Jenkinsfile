@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Testing GitHub-tests locally') {
       steps {
-        dir('C:/Users/User/.jenkins/workspace/KK2'){
+        dir('C:\Users\Stella\gitproject\fluffy-bunny\SIDE Exports'){
           bat 'python -m unittest'
         }
       }

@@ -46,13 +46,13 @@ class TestCartFunctions():
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Datorkomponenter")))
     element.click() #element.send_keys("")
     
-    print("Access Chassi category")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Chassi")))
+    print("Access RAM-Minne category")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "RAM-minne")))
     element.click()
     
     print("Search for specific product")
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/aside/div[2]/div/div[2]/div/div[1]/div[2]/div/input")))
-    element.send_keys("Hyte Y60")
+    element.send_keys("Corsair Vengeance RGB PRO SL 32GB (2x16GB)")
     
     #WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.CSS_SELECTOR, ".filter-box:nth-child(1) h3")))
     #self.driver.find_element(By.XPATH, "(//input[@type=\'text\'])[2]").send_keys("Hyte Y60")
@@ -60,16 +60,16 @@ class TestCartFunctions():
     self.driver.implicitly_wait(3)
 
     print("Select specified product")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT , "Hyte Y60 Midi Tower")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT , "Corsair Vengeance RGB PRO SL 32GB (2x16GB)")))
     element.click()
     
     #print("Wait and then scroll")
-    WebDriverWait(self.driver,3)
+    self.driver.implicitly_wait(3)
     #self.driver.execute_script("window.scrollBy(0,500)","")
     
-    print("Add a package deal to cart")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button/span")))
-    element.click()
+    #print("Add a package deal to cart")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/section/div[1]/button/span")))
+    #element.click()
     
     try:
       print("Close login window")
@@ -88,34 +88,54 @@ class TestCartFunctions():
     #WebDriverWait(self.driver, 3)
     #self.driver.execute_script("window.scrollBy(0,-500)","")
     
-    print("Open cart?")
-    element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div")))
-    element.click() #By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/strong"
+    #print("Open cart")
+    #element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div")))
+    #element.click() #By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div/div[2]/strong"
     
-    self.driver.implicitly_wait(3)
-    print("Removal of first product in cart")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
-    element.click()
+    #self.driver.implicitly_wait(3)
+    #print("Removal of first product in cart")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
+    #element.click()
     
-    self.driver.implicitly_wait(3)
-    print("Removal of second product in cart")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(2) .btn-remove-item > .icon")))
-    element.click()
+    #self.driver.implicitly_wait(3)
+    #print("Removal of second product in cart")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(2) .btn-remove-item > .icon")))
+    #element.click()
     
-    self.driver.implicitly_wait(3)
-    print("Removal of first product in cart")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
-    element.click()
+    #self.driver.implicitly_wait(3)
+    #print("Removal of first product in cart")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".cart-list-row:nth-child(1) .btn-remove-item > .icon")))
+    #element.click()
 
-    self.driver.implicitly_wait(3)
-    print("Close cart window")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".btn-close > .icon")))
+    #self.driver.implicitly_wait(3)
+    #print("Close cart window")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".btn-close > .icon")))
+    #element.click()
+    
+    print("Add the product to cart")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/div[2]/div[1]/div/article/div/div[1]/div/section[2]/div[1]/button/span")))
     element.click()
     
-    print("Navigate to Köpvillkor page")
-    element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Köpvillkor")))
+    try: 
+      print("Deny buyer protection")
+      element = WebDriverWait(self.driver, 3).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[4]/div/div/div[4]/button[2]")))
+      element.click()
+    except:
+      pass
+    
+    self.driver.implicitly_wait(3)
+    print("Open cart")
+    element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/div/header/div/div/div[4]/div/label/div")))
     element.click()
+    
+    print("Assert the product is in the cart")
+    product_in_cart = self.driver.find_element(By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(4) > div > div.header-dropdown.cart-large > div > ul > li > div.cart-list-product-wrap > div.product-title-wrap > span.fixed-lines.product-list-item-title > a")
+    simple_assert(product_in_cart, "Corsair Vengeance RGB PRO SL 32GB (2x16GB)")
+    
+    #print("Navigate to Köpvillkor page")
+    #element = WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.LINK_TEXT, "Köpvillkor")))
+    #element.click()
   
-    print("Assert we've reached the last page")
-    title_name = self.driver.find_element(By.CSS_SELECTOR, "#main-container > article > section.info-top.d-flex.flex-wrap > div > h1")
-    simple_assert(title_name.text, "Köpvillkor")
+    #print("Assert we've reached the last page")
+    #title_name = self.driver.find_element(By.CSS_SELECTOR, "#main-container > article > section.info-top.d-flex.flex-wrap > div > h1")
+    #simple_assert(title_name.text, "Köpvillkor")

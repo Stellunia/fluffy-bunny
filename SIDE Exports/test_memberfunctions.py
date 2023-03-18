@@ -28,19 +28,84 @@ class TestMemberFunctions():
   
   def test_member_functions(self):
     self.driver.get("https://www.webhallen.com/")
-    self.driver.find_element(By.LINK_TEXT, "Stellunia").click()
-    self.driver.find_element(By.LINK_TEXT, "Achievements").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".col-md-6:nth-child(25) .achievement-title").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".icon").click()
-    self.driver.find_element(By.LINK_TEXT, "Min avatar").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".p-right > .avatar-item-selector:nth-child(4) .item-type").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".avatar-item-showcase-box:nth-child(5) .ximg-content").click()
-    self.driver.find_element(By.CSS_SELECTOR, ".icon").click()
-    self.driver.find_element(By.LINK_TEXT, "Supply Drops").click()
+    
+    print("Accessing login")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Logga in")))
+    element.click()
+    
+    print("Entering username")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div/input")))
+    element.click()
+    element.send_keys("EstelleTest2023")
+    
+    print("Entering password")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div[2]/input")))
+    element.click()
+    element.send_keys("testing1forEC")
+    
+    print("Logging in")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "div:nth-child(1) > .text-btn > span")))
+    element.click()
+    
+    print("Click into profile")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Stellunia")))
+    element.click()
+    
+    print("Enter Achievements")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Achievements")))
+    element.click()
+    
+    print("Click achievement")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".col-md-6:nth-child(25) .achievement-title")))
+    element.click()
+    
+    print("Close achievement popup")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".icon")))
+    element.click()
+    
+    print("Select My avatar")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Min avatar")))
+    element.click()
+    
+    print("Select the legs option")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".p-right > .avatar-item-selector:nth-child(4) .item-type")))
+    element.click()
+    
+    print("Choose legs")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".avatar-item-showcase-box:nth-child(5) .ximg-content")))
+    element.click()
+    
+    print("Close window")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".icon")))
+    element.click()
+    
+    print("Select Supply Drops")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Supply Drops")))
+    element.click()
+        
+    print("Select friendlist")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By. , "")))
+    #element.
     self.driver.find_element(By.LINK_TEXT, "Vänner").click()
+    
+    print("")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By. , "")))
+    #element.
     self.driver.find_element(By.LINK_TEXT, "Topplistor").click()
+    
+    print("")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By. , "")))
+    #element.
     self.driver.find_element(By.LINK_TEXT, "Gsmhacker").click()
+    
+    print("")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By. , "")))
+    #element.
     self.driver.find_element(By.CSS_SELECTOR, ".checkbox").click()
+    
+    print("")
+    #element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By. , "")))
+    #element.
     self.driver.find_element(By.CSS_SELECTOR, ".dropdown-select:nth-child(1) > .dropdown-label > span").click()
     self.driver.find_element(By.CSS_SELECTOR, ".dropdown-item:nth-child(3) > .list-label").click()
     self.driver.find_element(By.LINK_TEXT, "Stellunia").click()

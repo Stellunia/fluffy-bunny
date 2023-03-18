@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from helper_tests import simple_assert, boolean_assert
 
-class TestLoginFunctions():
+class TestFriendRequest():
   def setup_method(self, method):
     chrome_options = Options()
     chrome_options.add_argument("--window-size=1920,1080")
@@ -26,9 +26,16 @@ class TestLoginFunctions():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_login(self):
+  def test_friend_request(self):
     self.driver.get("https://www.webhallen.com/")
     
+    try:
+      print("Bypass cookies")
+      element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
+      element.click()
+    except:
+      pass
+  
     print("Accessing login")
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Logga in")))
     element.click()
@@ -47,7 +54,29 @@ class TestLoginFunctions():
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "div:nth-child(1) > .text-btn > span")))
     element.click()
     
-    login = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > label > div.member-logged-in-text > div.username > a")))
-    simple_assert(login.text, "EstelleTest2023")
+    print("Select Profile")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "EstelleTest2023")))
+    element.click()
     
-  
+    print("Select friendslist")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Vänner")))
+    element.click()
+    
+    print("Check friend requests")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/article/div[2]/div[2]/div[1]/button[2]/span[1]")))
+    element.click()
+    
+    print("Accept friend request")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/article/div[2]/div[2]/div[2]/div/div[3]/span[2]")))
+    element.click()
+    
+    self.driver.implicitly_wait(3)
+    print("Return to friendslist")
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Vänner")))
+    element.click()
+    
+    print("Affirm friendship")
+    friendship_check = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Stellunia")))
+    simple_assert(friendship_check.text, "Stellunia")
+    
+    

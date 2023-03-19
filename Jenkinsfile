@@ -5,7 +5,7 @@ pipeline {
     stage('Testing GitHub-tests locally') {
       steps {
         dir('C:/Users/Stella/gitproject/fluffy-bunny/SIDE Exports/Successful tests'){
-          bat 'python -m unittest'
+          bat 'python -m pytest'
         }
       }
    }

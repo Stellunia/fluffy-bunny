@@ -30,24 +30,24 @@ class TestLoginFunctions():
     self.driver.get("https://www.webhallen.com/")
     
     print("Accessing login")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Logga in")))
+    element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.LINK_TEXT, "Logga in")))
     element.click()
     
     print("Entering username")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div/input")))
+    element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div/input")))
     element.click()
     element.send_keys("EstelleTest2023")
     
     print("Entering password")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div[2]/input")))
+    element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//header[@id=\'main-header\']/div/div/div[3]/div/div[3]/form/div/div/div[2]/input")))
     element.click()
     element.send_keys("testing1forEC")
     
     print("Logging in")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "div:nth-child(1) > .text-btn > span")))
+    element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "div:nth-child(1) > .text-btn > span")))
     element.click()
     
-    login = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > label > div.member-logged-in-text > div.username > a")))
+    login = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#main-header > div > div > div:nth-child(3) > div > label > div.member-logged-in-text > div.username > a")))
     simple_assert(login.text, "EstelleTest2023")
     
   

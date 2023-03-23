@@ -13,6 +13,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 
+#from webdriver_manager.chrome import ChromeDriverManager
+#from selenium.webdriver.chrome.service import Service as ChromeService
+#service = ChromeService(executable_path=ChromeDriverManager().install())
+#web_driver = webdriver.Chrome(service=service)
+
 from helper_tests import simple_assert, boolean_assert
 
 class TestFriendRequest():

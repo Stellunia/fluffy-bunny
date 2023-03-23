@@ -32,7 +32,7 @@ class TestCartFunctions():
     
     try:
       print("Bypass cookies")
-      element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
+      element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
       element.click()
     except:
       pass

@@ -29,6 +29,13 @@ class TestMemberFunctions():
   def test_member_functions(self):
     self.driver.get("https://www.webhallen.com/")
     
+    try:
+      print("Bypass cookies")
+      element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[3]/div/div/button[1]/span")))
+      element.click()
+    except:
+      pass
+    
     print("Accessing login")
     element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Logga in")))
     element.click()
@@ -48,7 +55,7 @@ class TestMemberFunctions():
     element.click()
     
     print("Click into profile")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "Stellunia")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.LINK_TEXT, "EstelleTest2023")))
     element.click()
     
     print("Enter Achievements")
@@ -56,7 +63,7 @@ class TestMemberFunctions():
     element.click()
     
     print("Click achievement")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".col-md-6:nth-child(25) .achievement-title")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#main-container > article > div.row.m-0 > section > div:nth-child(7) > div > div > div")))
     element.click()
     
     print("Close achievement popup")
@@ -72,7 +79,7 @@ class TestMemberFunctions():
     element.click()
     
     print("Choose legs")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".avatar-item-showcase-box:nth-child(5) .ximg-content")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#site-container > div.modal-root > div > div.avatar-item-showcase > div:nth-child(1) > div > div")))
     element.click()
     
     print("Close window")

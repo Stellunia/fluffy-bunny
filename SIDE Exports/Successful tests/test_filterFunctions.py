@@ -64,7 +64,7 @@ class TestFilterFunctions():
     
     self.driver.implicitly_wait(3)
     print("Change filter format to pictures")
-    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/article/div[5]/div[1]/div[2]/button[3]")))
+    element = WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[3]/main/div/div[4]/div[1]/div/article/div[4]/div[1]/div[2]/button[3]/span/img")))
     element.click() 
     
     print("Wait and then scroll")

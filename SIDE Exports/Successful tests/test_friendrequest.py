@@ -22,9 +22,9 @@ from helper_tests import simple_assert, boolean_assert
 
 class TestFriendRequest():
   def setup_method(self, method):
-    chrome_options = Options()
-    chrome_options.add_argument("--window-size=1920,1080")
-    self.driver = webdriver.Chrome(chrome_options=chrome_options)
+    options = Options()
+    options.add_argument("--window-size=1920,1080")
+    self.driver = webdriver.Chrome(options=options)
     #chrome_options.add_experimental_option("detach", True)
     self.vars = {}
   
